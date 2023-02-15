@@ -1,0 +1,10 @@
+.task:hover::after {
+    content: attr(text);
+}
+
+.block-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 15px;
+}

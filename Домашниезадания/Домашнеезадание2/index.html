@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Домашнее задание 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Домашнее задание 2</h1>
+
+    <h2>Выберите номер задачи:</h2>
+
+    <form class="block-button" action="./script.js">
+        <button class="task" type="button"
+            text=": Создать переменные num1, num2 которые пользователь вводит с клавиатуры. Проверьте, что переменная num1 равна или меньше 1, а переменная num2 больше или равна 3."
+            onclick="TaskOne()">Task 1</button>
+        <button class="task" type="button"
+            text=": Перепишите код к тернарному оператору let test = true; if (test === true) {console.log('+++');} else {console.log('---');}."
+            onclick="TaskTwo()">Task 2</button>
+        <button class="task" type="button"
+            text=": В переменной day лежит какое-то число из интервала от 1 до 31. Определите в какую декаду месяца попадает это число (в первую, вторую или третью)."
+            onclick="TaskThree()">Task 3</button>
+        <button class="task" type="button"
+            text=": Необходимо от пользователя получить число. Необходимо вывести разряды числа, а именно: количество сотен, десятков и единиц."
+            onclick="TaskFour()">Task 4</button>
+    </form>
+    <!-- <div class="task"></div> -->
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
