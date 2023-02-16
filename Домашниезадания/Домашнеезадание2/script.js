@@ -1,8 +1,4 @@
 function TaskOne() {
-    // let textTask = 'Задание 1: Создать переменные num1, num2 которые пользователь вводит с клавиатуры. Проверьте, что переменная num1 равна или меньше 1, а переменная num2 больше или равна 3.'
-    // task = document.querySelector('.task')
-    // task.innerHTML = textTask;
-
     const num1 = prompt('Введите первое число');
     if (num1 <= 1) {
         alert("Введенное число меньше или равно 1");
@@ -12,7 +8,6 @@ function TaskOne() {
 
     const num2 = prompt('Введите второе число');
     if (num2 >= 3) {
-
         alert("Введенное число больше или равно 3");
     } else {
         alert("Введенное число НЕ больше и НЕ равно 3");
@@ -21,11 +16,6 @@ function TaskOne() {
 }
 
 function TaskTwo() {
-    // let textTask = 'Перепишите код к тернарному оператору let test = true; if (test === true) {console.log("+++");} else {console.log("---");}'
-
-    // task = document.querySelector('.task')
-    // task.innerHTML = textTask;
-
     let test = true;
     (test === true) ? console.log('+++') : console.log('---');
 
@@ -37,11 +27,6 @@ function TaskTwo() {
 }
 
 function TaskThree() {
-    // let textTask = 'В переменной day лежит какое-то число из интервала от 1 до 31. Определите в какую декаду месяца попадает это число (в первую, вторую или третью).'
-
-    // task = document.querySelector('.task')
-    // task.innerHTML = textTask;
-
     const day = Number(prompt('Введите число от 1 до 31'));
     switch (true) {
         case (day >= 1 && day <= 10):
@@ -59,14 +44,16 @@ function TaskThree() {
 }
 
 function TaskFour() {
-    let number = prompt('Введите любое число:');
-    if (typeof number === 'number') {
+    let number = Number(prompt('Введите любое число:'));
+
+
+    if (typeof number === "number" && !isNaN(number)) {
         number = number % 1000;
-        const hundreds = parseInt(number / 100);
+        const hundreds = parseInt(number / 100, 10);
         number = number % 100;
-        const tens = parseInt(number / 10);
+        const tens = parseInt(number / 10, 10);
         number = number % 10;
-        const units = parseInt(number / 1);
+        const units = parseInt(number / 1, 10);
         alert(`В данном числе: ${hundreds} сотен ${tens} десяток ${units} единиц`);
 
     } else alert('Вы ввели не число');
