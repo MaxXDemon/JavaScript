@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson 2</title>
+</head>
+
+<body>
+    <input type="text" id="numA">
+    <input type="text" id="action">
+    <input type="text" id="numB">
+    <button type="button" onclick="Calc()">Результат</button>
+    <script>
+        function Calc() {
+            const numA = Number(document.getElementById("numA").value);
+            const numB = Number(document.getElementById("numB").value);
+            const action = document.getElementById("action").value;
+            let result = 0;
+            switch (action) {
+                case ("+"):
+                    result = numA + numB;
+                    console.log(result);
+                    break;
+
+                case ("-"):
+                    result = numA - numB;
+                    console.log(result);
+                    break;
+
+                case ("*"):
+                    result = numA * numB;
+                    console.log(result);
+                    break;
+
+                case ("/"):
+                    result = numA / numB;
+                    console.log(result);
+                    break;
+
+
+                default:
+                    alert("Некоррктная операция!")
+                    break;
+            }
+
+
+        }
+    </script>
+</body>
+
+</html>
