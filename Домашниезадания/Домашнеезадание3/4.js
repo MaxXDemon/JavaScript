@@ -18,4 +18,20 @@ console.log(sum(2, 6)); должно вывести число 8 в консол
 Демонстрировать работы функций не обязательно.
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+const summ = (firstNum, secondNum) => { return firstNum + secondNum; }
+
+const multiplication = (firstNum, secondNum) => { return firstNum * secondNum; }
+
+const division = (firstNum, secondNum) => { return firstNum / secondNum; }
+
+function subtraction(firstNum, secondNum) {
+    return firstNum >= secondNum ? firstNum - secondNum : secondNum - firstNum;
+}
+
+const firstNum = +prompt("Введите первое число:");
+const secondNum = +prompt("Введите второе число:");
+
+console.log(`Сумма данных чисел равна:${summ(firstNum, secondNum)}`);
+console.log(`Произведение данных чисел равно:${multiplication(firstNum, secondNum)}`);
+console.log(`Частное данных чисел равно:${division(firstNum, secondNum)}`);
+console.log(`Разность данных чисел равна:${subtraction(firstNum, secondNum)}`);
