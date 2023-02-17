@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson 3</title>
+</head>
+
+<body>
+    <script>
+        function hello(firstName, lastName, age) {
+            console.log(`Привет ${firstName} ${lastName} с возрастом ${age}`);
+        }
+
+        function power(number) {
+            return number * number;
+
+        }
+
+        function checkNegative(number) {
+            if (number >= 0) { return "+++++"; }
+            else { return "------"; }
+        }
+
+        const summThreeNumber = (numberOne, numberTwo, numberThree) => numberOne + numberTwo + numberThree;
+        function summThreeNumbers(numberOne, numberTwo, numberThree) {
+            return numberOne + numberTwo + numberThree;
+        }
+
+        function func(num = 5) {
+            console.log(num * num);
+        }
+
+        function greeting(name) {
+            // let clock = new Date();
+            // let hour = clock.getHours();
+            let hour = prompt("Введите текущее время")
+            if (hour < 7) { return "Доброй ночи " + name; }
+            else if (hour < 12) { return "Доброе утро " + name; }
+            else if (hour < 18) { return "Добрый день " + name; }
+            return "Добрый вечер " + name;
+        }
+
+        const name = prompt("Как Вас зовут?");
+        alert(greeting(name));
+        // func(2);
+        // func();
+        // const numberOne = 15;
+        // const numberTwo = 30;
+        // const numberThree = 5;
+        // console.log(summThreeNumbers(numberOne, numberTwo, numberThree));
+
+        // const result = power(2);
+        // alert(`Результат ${result}`);
+        // hello("Иван", "Петров", "33 года");
+        //console.log(checkNegative(15));
+
+
+    </script>
+</body>
+
+</html>
