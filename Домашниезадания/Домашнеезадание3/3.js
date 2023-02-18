@@ -10,7 +10,8 @@
 три числа. Проверять их не нужно.
 */
 
-const maxNumber = (firstNumber, secondNumber, thirdNumber) => { return Math.max(firstNumber, secondNumber, thirdNumber); }
+const maxNumber = (firstNumber, secondNumber, thirdNumber) => 
+Math.max(firstNumber, secondNumber, thirdNumber);
 
 const firstNumber = +prompt("Введите первое число (N1):");
 const secondNumber = +prompt("Введите второе число (N2):");

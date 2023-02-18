@@ -18,11 +18,11 @@ console.log(sum(2, 6)); должно вывести число 8 в консол
 Демонстрировать работы функций не обязательно.
 */
 
-const summ = (firstNum, secondNum) => { return firstNum + secondNum; }
+const summ = (firstNum, secondNum) => firstNum + secondNum;
 
-const multiplication = (firstNum, secondNum) => { return firstNum * secondNum; }
+const multiplication = (firstNum, secondNum) => firstNum * secondNum;
 
-const division = (firstNum, secondNum) => { return firstNum / secondNum; }
+const division = (firstNum, secondNum) => firstNum / secondNum;
 
 function subtraction(firstNum, secondNum) {
     return firstNum >= secondNum ? firstNum - secondNum : secondNum - firstNum;

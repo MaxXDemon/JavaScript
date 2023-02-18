@@ -9,9 +9,11 @@
 сообщение "Размер заработной платы за вычетом налогов равен N."
 */
 
-const salary = (number) => { return number * 0.87; }
+const salary = (number) => number * 0.87;
 const number = +prompt("Введите любое число:");
-if (typeof number === "number" && !isNaN(number)) {
+if (Number.isFinite(number))
+// (typeof number === "number" && !isNaN(number)) 
+{
     console.log(`Размер заработной платы за вычетом налогов равен: ${salary(number)}`);
 }
-else alert("Значение задано неверно");
+else { alert("Значение задано неверно"); }

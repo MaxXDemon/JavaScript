@@ -7,5 +7,5 @@
 который получаем от функции, в консоль.
 */
 
-const elevationThirdDegree = (number) => { return number ** (3) }
+const elevationThirdDegree = (number) => number ** (3);
 console.log(elevationThirdDegree(+prompt("Какое число нужно возвести в куб?")));
