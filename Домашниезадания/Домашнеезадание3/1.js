@@ -7,4 +7,5 @@
 который получаем от функции, в консоль.
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+const elevationThirdDegree = (number) => { return number ** (3) }
+console.log(elevationThirdDegree(+prompt("Какое число нужно возвести в куб?")));
