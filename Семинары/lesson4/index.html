@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson 4</title>
+</head>
+
+<body>
+
+    <script>
+        // const array = [1, 2, 3];
+        // for (let i = 0; i < array.length; i++) {
+        //     array[i] = ++array[i];
+        //     console.log(array[i]);
+        // }
+
+        // const arr = [];
+        // console.log(arr.length);
+        // arr[3] = 'a';
+        // console.log(arr.length);
+        // arr[8] = 'b';
+        // console.log(arr.length);
+
+        // const arr = [1, 2, 3,];
+        // arr.push(4);
+        // arr.unshift(0);
+        // // arr.pop();
+        // arr.splice(2, 2, 100, 200, 300);
+        // console.log(arr);
+        // arr.pop();
+        // console.log(arr);
+        // const array = arr.slice(-2);
+        // console.log(array);
+        // const array = [];
+        // const arr = [];
+        // for (let i = 0, j = 11; j <= 33; i++, j++) {
+        //     array.push(j);
+        //     arr[i] = j;
+        // }
+        // console.log(array);
+        // console.log(arr);
+        // const array = [];
+        // for (let i = 1; i < 100; i++) {
+        //     if (i % 2 !== 0) { array.push(i) }
+        // }
+        // console.log(array);
+
+        // let num = 1;
+        // while (num <= 1000) {
+        //     num = num * 3;
+        //     console.log(num);
+        // }
+
+        // const arr = [2, 5, 9, 15, 1, 4];
+
+        // for (let i = 0; i < arr.length; i++) {
+        //     if (arr[i] > 3 && arr[i] < 10) { console.log(arr[i]); }
+        // }
+        // let j = 0;
+        // const array = [];
+        // for (let i = 2; i <= 100; i++) {
+        //     if (!(i % 2)) { j = j + i; array.push(i); }
+        // }
+        // console.log(array);
+        // console.log(j);
+        // const array = [2, 5, 9, 3, 1, 4];
+        // let summ = 0;
+        // for (let i = 0; i < array.length; i++) {
+        //     summ = summ + array[i];
+        //     console.log(summ);
+        // }
+        // let str = '-'
+        // for (let i = 0; i < 10; i++) {
+        //     str = str + i + '-';
+        // }
+        // console.log(str);
+        // let i = 0;
+        // const array = [2, 5, 9, 0, 3, 1, 4];
+        // while (array[i] !== 0 && i < array.length) {
+        //     console.log(array[i]);
+        //     i++;
+        // }
+        let result = [];
+        for (let i = 2; i < 10; i++) {
+            for (let j = 2; j < 10; j++) {
+                result.push(`${i}*${j}=${i * j}`);
+
+            }
+            console.log(result);
+            result.splice(0, result.length);
+        }
+
+    </script>
+</body>
+
+</html>
