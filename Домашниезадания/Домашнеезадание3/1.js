@@ -9,3 +9,4 @@
 
 const elevationThirdDegree = (number) => number ** (3);
 console.log(elevationThirdDegree(+prompt("Какое число нужно возвести в куб?")));
+

@@ -10,11 +10,10 @@
 три числа. Проверять их не нужно.
 */
 
-const maxNumber = (firstNumber, secondNumber, thirdNumber) => 
-Math.max(firstNumber, secondNumber, thirdNumber);
+const maxNumber = (firstNumber, secondNumber, thirdNumber) =>
+    Math.max(firstNumber, secondNumber, thirdNumber);
 
 const firstNumber = +prompt("Введите первое число (N1):");
 const secondNumber = +prompt("Введите второе число (N2):");
 const thirdNumber = +prompt("Введите третье число(N3):");
-
 alert(`"Максимальное значение среди чисел N1, N2, N3 равно ${maxNumber(firstNumber, secondNumber, thirdNumber)}"`);
